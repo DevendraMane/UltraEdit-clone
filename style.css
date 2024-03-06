@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  /* margin: 0;
+        padding: 0; */
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo img {
+  /* background-color: blue; */
+  /* height: 70px; */
+  /* Height dyaych kaam nahi automatically set hote */
+  width: 175px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  /* Taki dono chijo ke bich me space aa jai... */
+
+  align-items: center;
+
+  /* Taki sabkuch vertically centre ho jai... */
+
+  /* Note : Here we haven't use align-content: center; bcoz there are no multiple lines */
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 70px;
+}
+
+.middle span {
+  font-size: 40px;
+}
+.middle span img {
+  margin: 0px 15px;
+}
+
+.middle div p {
+  font-size: 20px;
+  width: 54vw;
+  text-align: center;
+}
+
+.middle button {
+  background-color: #2ec2d9;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  width: 270px;
+  color: white;
+  font-weight: bold;
+}
+.middle button:hover {
+  background-color: #09a6bd;
+  /* this is on hover */
+  border-radius: 5px;
+}
+
+.mid {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.card {
+  padding: 23px;
+  background-color: #f9f9f9;
+}
+
+.card .lang {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.b1 {
+  background-color: #00b6d1;
+
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.b1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.b2 {
+  background-color: #5cb85c;
+
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.b2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.midpart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 360px;
+  margin-bottom: 30px;
+}
+
+.midpart img {
+  width: 50px;
+  height: 50px;
+}
+
+.midpart :nth-child(2) {
+  font-size: 23px;
+}
+.midpart :nth-child(3) {
+  font-size: 13px;
+}
+
+.arrowbox button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  background-color: #00b6d1;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 930px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.black {
+  background-color: #222222;
+  width: 100%;
+  height: 500px;
+  padding: 75px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.black1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  width: 420px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.black1 .text span {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  line-height: 24px;
+}
+.s1 {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 28px;
+  font-style: normal;
+}
+.s2 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.black1 .card {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 12px;
+  width: 310px;
+  height: 228px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.black1 .card span {
+  color: #00b6d1;
+  font-weight: 500;
+}
+.black1 .card label {
+  font-size: 11px;
+}
+.black1 .card input {
+  width: 230px;
+  height: 45px;
+}
+.black1 .card button {
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 230px;
+  height: 45px;
+  background-color: #2ec2d9;
+  font-weight: 600;
+  color: white;
+}
+
+.black2 {
+  color: white;
+  width: 858px;
+  height: 210px;
+  margin: 0px 364px;
+  padding: 24px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.black2 span {
+  display: flex;
+  font-family: "Segoe UI";
+}
+
+.black2 :first-child {
+  font-size: 24px;
+  font-weight: 400;
+}
+.black2 :nth-child(2) {
+  font-size: 15px;
+  font-weight: 400;
+}
+.black2 :nth-child(3) {
+  font-size: 15px;
+  font-weight: 400;
+}
+.black2 :nth-child(4) {
+  font-size: 24px;
+  font-weight: 400;
+}
+.black2 :nth-child(5) {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.white {
+  height: 520px;
+  background-color: #f9f9f9;
+  padding: 70px 0px 55px;
+}
+
+.sec1 {
+  height: 344px;
+  width: 960px;
+  padding: 24px 0px;
+  margin: 0px 364px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+h4 {
+  font-weight: 700;
+  color: black;
+  padding: 0px 0px 10px;
+  width: 218px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0 0 0 / 60%);
+  font-size: 13px;
+}
+
+.col {
+  /* background-color: #00b6d1; */
+  display: flex;
+  flex-direction: column;
+  width: 218px;
+  height: 343px;
+  gap: 5px;
+}
+
+.white-input {
+  width: 176.8px;
+  height: 17.6px;
+  border: none;
+  padding: 10px 16px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+.white-btn {
+  width: 209.8px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2ec2d9;
+  color: white;
+  font-weight: 700;
+}
+.col4 {
+  gap: 5px;
+}
+.form {
+  line-height: 50px;
+}
+
+.sec2 {
+  width: 960px;
+  height: 50px;
+  margin: 0px 280px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos img {
+  height: 30px;
+  width: 30px;
+}
+.logos img:hover {
+  height: 32px;
+  width: 32px;
+}
+
+ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+ul li {
+  list-style: none;
+}
+
+.last {
+  color: #222222;
+  height: 24px;
+  font-size: 12px;
+  width: 960px;
+  margin: auto;
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+.flex1 {
+  display: flex;
+  justify-content: center;
+}
+.flex2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex3 {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (width < 1322px) {
+  nav {
+    width: 1500px;
+  }
+  .flex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (width < 1024px) {
+  nav {
+    width: 2000px;
+  }
+}
+@media only screen and (width < 935px) {
+  nav {
+    width: 140%;
+  }
+}
+@media only screen and (width < 870px) {
+  nav {
+    width: 150%;
+  }
+}
+@media only screen and (width < 810px) {
+  nav {
+    width: 160%;
+  }
+}
+@media only screen and (width < 760px) {
+  nav {
+    width: 170%;
+  }
+}
+@media only screen and (width < 715px) {
+  nav {
+    width: 180%;
+  }
+}
+@media only screen and (width < 680px) {
+  nav {
+    width: 200%;
+  }
+}
+@media only screen and (width < 608px) {
+  nav {
+    width: 240%;
+  }
+}
+@media only screen and (width < 508px) {
+  nav {
+    width: 260%;
+  }
+}
+@media only screen and (width < 450px) {
+  nav {
+    width: 300%;
+  }
+}
+@media only screen and (width < 390px) {
+  nav {
+    width: 340%;
+  }
+}
+@media only screen and (width < 300px) {
+  nav {
+    width: 320%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
